@@ -1,6 +1,14 @@
 (ns Item_Associations.core
   (:gen-class))
 
+; GOAL:
+;  Below is a table representing eight transactions and five items.
+ ; The items are represented by their first letters, e.g., M =milk. 
+ ; An X represents membership of the item in the transaction. 
+ ; Find all of the rules of the form X->Y, 
+ ; where X and Y are single items (not sets of two or more items), 
+ ; that have confidence exactly ½. 
+
 ;; ; Legend:
 ;; ; b = beer
 ;; ; c = coke
@@ -44,9 +52,5 @@
 
 (def universal-set (map #(confidence-infer % itemsets) itemsets))
 
-(def answer (map (fn [u-set]
-                   (filter #(= 0.5 (last %)) u-set)) (remove empty? universal-set)))
-
-
-
-
+(def answer (remove empty? (map (fn [u-set]
+                   (filter #(= 0.5 (last %)) u-set)) (remove empty? universal-set))))
