@@ -5,7 +5,14 @@
 ; Happy coding! ♥️
 
 ; Jacking in...
-; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
+; Interrupting Jack-in process.
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS:
@@ -18,130 +25,235 @@
 clj꞉Item_Associations.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉Item_Associations.core꞉> 
-(+ 1 1)
-2
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/transactions
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/itemsets
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/find-subset
-clj꞉Item_Associations.core꞉> 
-(find-subset "b")
-()
-clj꞉Item_Associations.core꞉> 
-(find-subset (set "b"))
-()
-clj꞉Item_Associations.core꞉> 
-(set "b")
-#{\b}
-clj꞉Item_Associations.core꞉> 
-(coll (set "b"))
-; Syntax error compiling at (.calva/output-window/output.calva-repl:39:1).
-; Unable to resolve symbol: coll in this context
-clj꞉Item_Associations.core꞉> 
-; Syntax error compiling at (.calva/output-window/output.calva-repl:39:1).
-; Unable to resolve symbol: coll in this context
-clj꞉Item_Associations.core꞉> 
-(seq (set "b"))
-(\b)
-clj꞉Item_Associations.core꞉> 
-(find-subet #{"b"})
-; Syntax error compiling at (.calva/output-window/output.calva-repl:49:1).
-; Unable to resolve symbol: find-subet in this context
-clj꞉Item_Associations.core꞉> 
-(find-subset #{"b"})
-(#{"p" "b"} #{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"})
-clj꞉Item_Associations.core꞉> 
-(find-subset #{"p"})
-(#{"p" "b"} #{"p" "m"})
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/find-subset
-clj꞉Item_Associations.core꞉> 
-(find-subset #{"p"})
-; Execution error (ClassCastException) at Item-Associations.core/find-subset (form-init9198037827080874032.clj:28).
-; class clojure.lang.LazySeq cannot be cast to class java.lang.Number (clojure.lang.LazySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/find-subset
-clj꞉Item_Associations.core꞉> 
-(find-subset #{"p"})
-(#{"p" "b"} #{"p" "m"})
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/find-subset
-clj꞉Item_Associations.core꞉> 
-(find-subset #{"p"})
+; Syntax error compiling at (src/Item_Associations/association_rules.clj:24:17).
+; Unable to resolve symbol: transactions in this context
+clj꞉Item-Associations.association-rules꞉> 
+; Syntax error compiling at (src/Item_Associations/association_rules.clj:24:17).
+; Unable to resolve symbol: transactions in this context
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/transactions
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/itemsets
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-subset
+clj꞉Item-Associations.association-rules꞉> 
+(find-subset itemsets)
 nil
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/inference
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/confidence
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/confidence-infer
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/universal-set
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/answer
-clj꞉Item_Associations.core꞉> 
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/inference
+clj꞉Item-Associations.association-rules꞉> 
+(find-subset transactions)
+nil
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-infer
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/universal-set
+clj꞉Item-Associations.association-rules꞉> 
+universal-set
+; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
+; Divide by zero
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/answer
+clj꞉Item-Associations.association-rules꞉> 
 answer
-; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
-; Divide by zero
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/inference
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/confidence
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/confidence-infer
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/universal-set
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/answer
-clj꞉Item_Associations.core꞉> 
-; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
-; Divide by zero
-clj꞉Item_Associations.core꞉> 
-(() ([#{"c"} #{"p"} 0.0] [#{"c"} #{"m"} 0.75] [#{"c"} #{"j"} 0.5] [#{"c"} #{"b"} 0.75]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"c"} 0.6] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"c"} 0.75] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
-(([#{"c"} #{"p"} 0.0] [#{"c"} #{"m"} 0.75] [#{"c"} #{"j"} 0.5] [#{"c"} #{"b"} 0.75]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"c"} 0.6] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"c"} 0.75] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/universal-set
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/answer
-clj꞉Item_Associations.core꞉> 
-; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
-; Divide by zero
-clj꞉Item_Associations.core꞉> 
-()
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/universal-set
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/answer
-clj꞉Item_Associations.core꞉> 
-; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
-; Divide by zero
-clj꞉Item_Associations.core꞉> 
-(([#{"c"} #{"p"} 0.0] [#{"c"} #{"m"} 0.75] [#{"c"} #{"j"} 0.5] [#{"c"} #{"b"} 0.75]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"c"} 0.6] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"c"} 0.75] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
-(([#{"c"} #{"p"} 0.0] [#{"c"} #{"m"} 0.75] [#{"c"} #{"j"} 0.5] [#{"c"} #{"b"} 0.75]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"c"} 0.6] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"c"} 0.75] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
-(4 4 4 4)
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/answer
-clj꞉Item_Associations.core꞉> 
-(([#{"c"} #{"p"} 0.0] [#{"c"} #{"j"} 0.5]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/answer
-clj꞉Item_Associations.core꞉> 
-(([#{"c"} #{"j"} 0.5]) () ([#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
-4
-clj꞉Item_Associations.core꞉> 
-(() ([#{"c"} #{"p"} 0.0] [#{"c"} #{"m"} 0.75] [#{"c"} #{"j"} 0.5] [#{"c"} #{"b"} 0.75]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"c"} 0.6] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"c"} 0.75] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
-(([#{"c"} #{"p"} 0.0] [#{"c"} #{"m"} 0.75] [#{"c"} #{"j"} 0.5] [#{"c"} #{"b"} 0.75]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"c"} 0.6] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"c"} 0.75] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
 (([#{"c"} #{"j"} 0.5]) ([#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
-#'Item_Associations.core/answer
-clj꞉Item_Associations.core꞉> 
-(([#{"c"} #{"j"} 0.5]) ([#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
-clj꞉Item_Associations.core꞉> 
+clj꞉Item-Associations.association-rules꞉> 
+universal-set
+(() ([#{"c"} #{"p"} 0.0] [#{"c"} #{"m"} 0.75] [#{"c"} #{"j"} 0.5] [#{"c"} #{"b"} 0.75]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"c"} 0.6] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"c"} 0.75] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
+clj꞉Item-Associations.association-rules꞉> 
+(find-subset itemsets)
+nil
+clj꞉Item-Associations.association-rules꞉> 
+(filter #(clojure.set/subset? #{"b"} %) transactions)
+(#{"p" "b"} #{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"})
+clj꞉Item-Associations.association-rules꞉> 
+(filter #(clojure.set/subset? #{"p"} %) (remove nil? (filter #(clojure.set/subset? #{"b"} %) transactions)))
+(#{"p" "b"})
+clj꞉Item-Associations.association-rules꞉> 
+(filter #(clojure.set/subset? #{"c"} %) (remove nil? (filter #(clojure.set/subset? #{"b"} %) transactions)))
+(#{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"})
+clj꞉Item-Associations.association-rules꞉> 
+(confidence #{"b"} #{"c"})
+[#{"b"} #{"c"} 0.75]
+clj꞉Item-Associations.association-rules꞉> 
+(map #(confidence % itemsets) itemsets)
+; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
+; Divide by zero
+clj꞉Item-Associations.association-rules꞉> 
+(filter #(clojure.set/subset? #{"b"} %) transactions)
+(#{"p" "b"} #{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"})
+clj꞉Item-Associations.association-rules꞉> 
+(filter #(clojure.set/subset? infer-item %) 
+(#{"p" "b"} #{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"}))
+; Syntax error compiling at (.calva/output-window/output.calva-repl:88:10).
+; Unable to resolve symbol: infer-item in this context
+clj꞉Item-Associations.association-rules꞉> 
+(filter #(clojure.set/subset? #{"c"} %)
+        (#{"p" "b"} #{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"}))
+; Execution error (ArityException) at Item-Associations.association-rules/eval7941 (form-init14000615002503871492.clj:94).
+; Wrong number of args (3) passed to: clojure.lang.PersistentHashSet
+clj꞉Item-Associations.association-rules꞉> 
+(filter #(clojure.set/subset? #{"c"} %)
+        '(#{"p" "b"} #{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"}))
+(#{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"})
+clj꞉Item-Associations.association-rules꞉> 
+(float (/ 3 4))
+0.75
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-association-subset
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/inference
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-instance
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules [transactions itemsets])
+; Execution error (ArityException) at Item-Associations.association-rules/eval8024 (form-init14000615002503871492.clj:113).
+; Wrong number of args (1) passed to: Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (3) passed to: Item-Associations.association-rules/confidence
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (3) passed to: Item-Associations.association-rules/confidence
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (3) passed to: Item-Associations.association-rules/confidence
+clj꞉Item-Associations.association-rules꞉> 
+; Syntax error compiling at (src/Item_Associations/association_rules.clj:49:30).
+; Unable to resolve symbol: inference-subset in this context
+clj꞉Item-Associations.association-rules꞉> 
+; Syntax error compiling at (src/Item_Associations/association_rules.clj:43:28).
+; Unable to resolve symbol: inference-subset in this context
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-subset
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/inference-subset
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
+; Divide by zero
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
+; Divide by zero
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-subset
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/inference-subset
+clj꞉Item-Associations.association-rules꞉> 
+(find-subset #{"b"} transactions)
+(#{"p" "b"} #{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"})
+clj꞉Item-Associations.association-rules꞉> 
+(inference-subset #{"b"} #{"c"} transactions)
+(#{"j" "b" "c"} #{"b" "m" "c"} #{"j" "b" "m" "c"})
+clj꞉Item-Associations.association-rules꞉> 
+(confidence #{"b"} #{"c"} transactions)
+; Execution error (IllegalArgumentException) at Item-Associations.association-rules/confidence$fn (form-init14000615002503871492.clj:52).
+; contains? not supported on type: java.lang.String
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-instance
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence
+clj꞉Item-Associations.association-rules꞉> 
+(confidence #{"b"} #{"c"} transactions)
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/contains (RT.java:853).
+; contains? not supported on type: java.lang.String
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-instance
+clj꞉Item-Associations.association-rules꞉> 
+(confidence-instance #{"b"} #{"c"})
+[#{"b"} #{"c"} 0.75]
+clj꞉Item-Associations.association-rules꞉> 
+(confidence-instance #{"b"} #{"b"})
+[#{"b"} #{"b"} 1.0]
+clj꞉Item-Associations.association-rules꞉> 
+(confidence-instance #{"b"} #{"p"})
+[#{"b"} #{"p"} 0.25]
+clj꞉Item-Associations.association-rules꞉> 
+(confidence-instance #{"b"} #{"m"})
+[#{"b"} #{"m"} 0.5]
+clj꞉Item-Associations.association-rules꞉> 
+(confidence-instance #{"b"} #{"j"})
+[#{"b"} #{"j"} 0.5]
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+; Error printing return value (ArithmeticException) at clojure.lang.Numbers/divide (Numbers.java:188).
+; Divide by zero
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-subset
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/inference
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-infer
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/universal-set
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/answer
+clj꞉Item-Associations.association-rules꞉> 
+answer
+(([#{"p"} #{"c"} 0.0] [#{"p"} #{"m"} 0.5] [#{"p"} #{"j"} 0.0] [#{"p"} #{"b"} 0.5]) ([#{"c"} #{"p"} 0.0] [#{"c"} #{"j"} 0.5]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-infer
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/universal-set
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/answer
+clj꞉Item-Associations.association-rules꞉> 
+answer
+[([#{"p"} #{"c"} 0.0] [#{"p"} #{"m"} 0.5] [#{"p"} #{"j"} 0.0] [#{"p"} #{"b"} 0.5]) ([#{"c"} #{"p"} 0.0] [#{"c"} #{"j"} 0.5]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5])]
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-infer
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-subset
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/inference
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-infer
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/universal-set
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/answer
+clj꞉Item-Associations.association-rules꞉> 
+answer
+[([#{"p"} #{"c"} 0.0] [#{"p"} #{"m"} 0.5] [#{"p"} #{"j"} 0.0] [#{"p"} #{"b"} 0.5]) ([#{"c"} #{"p"} 0.0] [#{"c"} #{"j"} 0.5]) ([#{"m"} #{"p"} 0.2] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]) ([#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"p"} 0.25] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5])]
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+([[#{"p"} #{"c"} 0.0] [#{"p"} #{"m"} 0.5] [#{"p"} #{"j"} 0.0] [#{"p"} #{"b"} 0.5]] [[#{"c"} #{"p"} 0.0] [#{"c"} #{"m"} 0.75] [#{"c"} #{"j"} 0.5] [#{"c"} #{"b"} 0.75]] [[#{"m"} #{"p"} 0.2] [#{"m"} #{"c"} 0.6] [#{"m"} #{"j"} 0.4] [#{"m"} #{"b"} 0.4]] [[#{"j"} #{"p"} 0.0] [#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]] [[#{"b"} #{"p"} 0.25] [#{"b"} #{"c"} 0.75] [#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]])
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+(([#{"p"} #{"m"} 0.5] [#{"p"} #{"b"} 0.5]) ([#{"c"} #{"j"} 0.5]) ([#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/confidence-infer
+clj꞉Item-Associations.association-rules꞉> 
+#'Item-Associations.association-rules/find-assocation-rules
+clj꞉Item-Associations.association-rules꞉> 
+(find-assocation-rules transactions itemsets)
+(([#{"p"} #{"m"} 0.5] [#{"p"} #{"b"} 0.5]) ([#{"c"} #{"j"} 0.5]) ([#{"j"} #{"c"} 0.5] [#{"j"} #{"m"} 0.5] [#{"j"} #{"b"} 0.5]) ([#{"b"} #{"m"} 0.5] [#{"b"} #{"j"} 0.5]))
+clj꞉Item-Associations.association-rules꞉> 
