@@ -1,4 +1,4 @@
-# The Transactional Pattern Miner API
+# The Transactional Association Miner API
 
 **Description:**
 
