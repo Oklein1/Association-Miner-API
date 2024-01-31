@@ -4,6 +4,7 @@
 
 Effortlessly integrate transactional pattern discovery with the Transactional Pattern API – a lightweight and powerful machine learning tool. Seamlessly mine frequency itemsets from diverse datasets, uncovering valuable insights across domains. Whether it's analyzing online user behavior, discovering associations in e-commerce transactions, or understanding customer preferences in subscription services, this API simplifies predictive insights. With association rule learning at its core, businesses can optimize inventory, refine marketing strategies, and make informed decisions with ease.
 
+<br>
 
 ## Why Transactional Pattern API?
 
@@ -15,7 +16,9 @@ Effortlessly integrate transactional pattern discovery with the Transactional Pa
 
 4. <b>Predictive Power</b>: Leverage association rule learning to predict item occurrences based on transaction patterns, aiding in informed decision-making.
 
-**How does it work?**
+<br>
+
+## How does it work?**
 
 Imagine you are a supermarket eager to decipher consumer behavior. Your dataset comprises receipts given to customers after they pay. Below is a list of five items, each represented by its first letter (e.g., b = beer), and, below that, a list of eight transaction examples. Each transaction, such as {"b", "p"}, signifies items purchased in a single transaction.
 
