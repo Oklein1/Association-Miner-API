@@ -1,8 +1,8 @@
-# The Transactional Association Miner API
+# Association Miner API
 
 **Description:**
 
-Effortlessly integrate transactional pattern discovery with the Transactional Pattern API – a lightweight and powerful machine learning tool. Seamlessly mine frequency itemsets from diverse datasets, uncovering valuable insights across domains. Whether it's analyzing online user behavior, discovering associations in e-commerce transactions, or understanding customer preferences in subscription services, this API simplifies predictive insights. With association rule learning at its core, businesses can optimize inventory, refine marketing strategies, and make informed decisions with ease.
+Effortlessly integrate transactional pattern discovery with Association Miner API – a lightweight and powerful machine learning tool. Seamlessly mine frequency itemsets from diverse datasets, uncovering valuable insights across domains. Whether it's analyzing online user behavior, discovering associations in e-commerce transactions, or understanding customer preferences in subscription services, this API simplifies predictive insights. With association rule learning at its core, businesses can optimize inventory, refine marketing strategies, and make informed decisions with ease.
 
 <br>
 
